@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.navbar div {
+    border: 2px dotted white;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 10vw 40vw 20vw;
+    grid-gap: 2vw;
+    margin: 7vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+ 
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(5,4vw);
+    grid-gap: 2vw;
+    margin: 0 8vw;
+}
+
+body {
+    background-image:linear-gradient(to left, rgba(110, 180, 17, 0), rgb(67, 173, 192));
+    background-repeat: repeat-y;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input {
+    width: 10vw;
+    height: 3vh;
+}
+button {
+    width: 5vw;
+    height: 3vh;
+}
+.logo {
+    font-size:4vmax;
+}
+/*Extra large screens*/
+@media screen and (min-width:1201px) {
+    body {
+        background: white;
+    }
+}
+/*Desktop, large screens*/
+@media screen and (max-width:1200px) {
+    body {
+        background: yellow;
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 10vw 50vw 25vw;
+        grid-gap: 4vw;
+        margin: 7vh;
+    
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(5,4vw);
+        grid-gap: 4vw;
+        margin: 2vh 8vw;
+    }
+}
+/*small screens,laptops*/
+@media screen and (max-width:1024px) {
+    body {
+        background: green;
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 50vw 30vw;
+        grid-gap: 4vw;
+        margin: 7vh;
+ 
+    }
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(5,4vw);
+        grid-gap: 6vw;
+        margin: 0 0vw;
+    }
+}
+/*Ipads,Tablets*/
+@media screen and (max-width:768px) {
+    body {
+        background: greenyellow;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+ 
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(5,4vw);
+        grid-gap: 10vw;
+        margin: 0 0vw;
+    }
+}
+
+/*Mobile devices*/
+@media screen and (max-width:480px) {
+    body {
+        background: gray;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(1,4vw);
+        grid-gap: 5vw;
+        margin: 0 0vw;
+        align-content: center;
+        transform: translateX(-10vw);
+  
+    }
+    li {
+        margin-left: auto;
+    }
+}
