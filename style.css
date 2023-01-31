@@ -19,7 +19,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(5,4vw);
     grid-gap: 2vw;
-    margin: 0 8vw;
+    margin: 0 5vw;
 }
 
 body {
