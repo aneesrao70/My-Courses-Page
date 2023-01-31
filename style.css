@@ -2,9 +2,6 @@
     margin:0;
     padding: 0;
 }
-.navbar div {
-    border: 2px dotted white;
-}
 .navbar {
     display: grid;
     grid-template-columns: 10vw 40vw 20vw;
@@ -33,12 +30,14 @@ a {
     text-decoration: none;
 }
 input {
-    width: 10vw;
+    width: 150px;
     height: 3vh;
+    background-color: beige;
 }
 button {
-    width: 5vw;
-    height: 3vh;
+    width: 70px;
+    height: 3.5vh;
+    background-color: aqua;
 }
 .logo {
     font-size:4vmax;
@@ -56,16 +55,17 @@ button {
     }
     .navbar {
         display: grid;
-        grid-template-columns: 10vw 50vw 25vw;
+        grid-template-columns: 15vw 40vw 25vw;
         grid-gap: 4vw;
-        margin: 7vh;
+        justify-content: space-around;
+        margin-left: 5vw;
     
     }
     ul {
         display: grid;
         grid-template-columns: repeat(5,4vw);
-        grid-gap: 4vw;
-        margin: 2vh 8vw;
+        grid-gap: 3vw;
+        margin: 2vh 3vw;
     }
 }
 /*small screens,laptops*/
@@ -78,7 +78,7 @@ button {
         grid-template-columns: 50vw 30vw;
         grid-gap: 4vw;
         margin: 7vh;
- 
+
     }
     .logo {
         grid-column-start: 1;
@@ -102,13 +102,16 @@ button {
         flex-direction: column;
         justify-content: center;
         text-align: center;
- 
+        align-items: center;
+        justify-content: center;
+        row-gap: 4vh;
+    
     }
     ul {
         display: grid;
         grid-template-columns: repeat(5,4vw);
         grid-gap: 10vw;
-        margin: 0 0vw;
+        transform: translateX(-4vw);
     }
 }
 
@@ -127,13 +130,23 @@ button {
     ul {
         display: grid;
         grid-template-columns: repeat(1,4vw);
-        grid-gap: 5vw;
+        grid-gap: 2vw;
         margin: 0 0vw;
         align-content: center;
-        transform: translateX(-10vw);
+        transform: translateX(-20vw);
   
     }
+    a {
+        text-decoration: none;
+        color: white;
+    }
     li {
+
+        color: transparent;
         margin-left: auto;
+        background-color: black;
+        width: 40vw;
+        border-radius: 5px;
+        padding: 3vw;
     }
 }
